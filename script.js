@@ -10,10 +10,10 @@ const symbolsEl = document.querySelector('#symbols')
 const clipboardEl = document.querySelector('#clipboard')
 
 // arreys of string.charcode
-const UNIupper = [65, 90];
-const UNIlower = [97, 122];
-const UNInum = [48, 57];
-const UNIsym = [33,47];
+  const upper = [65, 90];
+  const lower = [97, 122];
+  const num = [48, 57];
+  const sym = [33,47];
  
 // event listener  
 generate.addEventListener('click', () => {
@@ -30,8 +30,8 @@ generate.addEventListener('click', () => {
     const grandSelector =[];
     const password = [];
 
-  if (upperCase => 0){
-      for (let i = UNIupper[0]; i <= UNIupper[1]; i++){
+  if (upperCase === true){
+      for (let i = upper[0]; i <= upper[1]; i++){
         grandSelector.push(i);
        
       }
@@ -39,24 +39,24 @@ generate.addEventListener('click', () => {
 
   }
 
-  if (lowerCase => 0){
-    for (let i = UNIlower[0]; i <= UNIlower[1]; i++){
+  if (lowerCase === true){
+    for (let i = lower[0]; i <= lower[1]; i++){
         grandSelector.push(i);
     }
     
 
 }
 
-if (numbers => 0){
-    for (let i = UNInum[0]; i <= UNInum[1]; i++){
+if (numbers === true){
+    for (let i = num[0]; i <= num[1]; i++){
         grandSelector.push(i);
     }
      
 
 }
 
-if (symbols => 0){
-    for (let i = UNIsym[0]; i <= UNIsym[1]; i++){
+if (symbols === true){
+    for (let i = sym[0]; i <= sym[1]; i++){
         grandSelector.push(i);
     }
     // console.log(grandSelector);
